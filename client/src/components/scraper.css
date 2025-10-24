@@ -1,0 +1,81 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.titleContainer{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.scraperimage{
+    max-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.siteInfo{
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.productsection{
+    color: white;
+    background-color: rgb(78, 78, 123);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 600px;
+    height: 320px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.searchquery{
+    color: white;
+    background-color: rgb(78, 78, 123);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 600px;
+    height: 150px;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.reviewsection{
+    color: white;
+    background-color: rgb(78, 78, 123);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 600px;
+    height: 230px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.whentouse{
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.whentouse h2{
+    font-weight: 100;
+}
+
+.owner{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.owner a{
+    text-decoration: none;
+}

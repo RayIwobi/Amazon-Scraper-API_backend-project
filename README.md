@@ -46,7 +46,7 @@ GET https://www.amazon.com/dp/B09XYZ1234
 
 Search API Example:
 
-GET https://www.amazon.com/(your search query) i.e https://www.amazon.com/shoes
+GET https://www.amazon.com/(your-search-query) i.e https://www.amazon.com/shoes
 
 
 Review API Example:
@@ -75,7 +75,7 @@ SaaS startups integrating Amazon data into their products
 
 🧑‍💻 Get Started
 
-Sign up for an API key.
+This app does not require an api key.
 
 Choose the endpoint you need (/product, /search, or /reviews).
 

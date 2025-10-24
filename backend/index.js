@@ -1,10 +1,15 @@
 const express = require('express')
 const request = require('request-promise')
+const cors = require('cors')
 const PORT = process.env.PORT || 5000
 
 
 const app = express()
 app.use(express.json());
+
+app.use(cors({
+    origin: 'http://localhost:3000'
+}))
 
 const apiKey = 'c9b89eaf2bb7b9ad606738ea8733996c';
 const baseUrl = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`
@@ -14,11 +19,11 @@ app.get('/', (req, res) => {
 })
 
 //Get products details
-app.get('/products/:productId', async(req, res) => {
-    const {productId} = req.params
+app.get('/products/:searchQuesry', async(req, res) => {
+    const {searchQuesry} = req.params
 
     try{
-        const response = await request(`${baseUrl}&url=https://www.amazon.com/dp/${productId}`);
+        const response = await request(`${baseUrl}&url=https://www.amazon.com/s?k=${searchQuesry}`);
         res.json(JSON.parse(response))
 
     }catch (error){
@@ -29,11 +34,11 @@ app.get('/products/:productId', async(req, res) => {
 
 
 //Get products reviews
-app.get('/products/:productId/reviews', async(req, res) => {
-    const {productId} = req.params
+app.get('/products/:searchQuery/reviews', async(req, res) => {
+    const {searchQuery} = req.params
 
     try{
-        const response = await request(`${baseUrl}&url=https://www.amazon.com/product-reviews/${productId}`);
+        const response = await request(`${baseUrl}&url=https://www.amazon.com/s?k=${searchQuery}/product-reviews/`);
         res.json(JSON.parse(response))
 
     }catch (error){
@@ -58,7 +63,7 @@ app.get('/products/:productId/offers', async(req, res) => {
 
 //Get search results
 //app.get('/search/:searchQuery', async(req, res) => { //you can remove the search in front of the searchQuery to make it easy for users
-app.get('/:searchQuery', async(req, res) => {
+app.get('/search/:searchQuery', async(req, res) => {
     const {searchQuery} = req.params
 
     try{
