@@ -34,14 +34,14 @@ function AmazonWebScraper() {
                 <div> 
                     <h4>If you want to search for a specific item/product</h4>
                 In your browser/searchbar :<br/>
-                https://amazon-scraper-ld6p.onrender.com/products/playstation/ ,(or biodance, bobisuka etc)
+                https://amazon-scraper-ld6p.onrender.com/products/playstation ,(or biodance, bobisuka etc)
 
                 <h5>Note: you can change the playstation to biodance or any product name you want.</h5>
                 </div>
 
                 or in your app:
 
-                <div>axios.get('https://amazon-scraper-ld6p.onrender.com/products/playstation/')</div>
+                <div>axios.get('https://amazon-scraper-ld6p.onrender.com/products/playstation')</div>
             </div>
 
 
@@ -56,12 +56,12 @@ function AmazonWebScraper() {
             <div className='searchquery'>
                 <div> 
                 in your browser/searchbar :<br/>
-                https://amazon-scraper-ld6p.onrender.com/search/shoes/ ,(or bags, phones etc)
+                https://amazon-scraper-ld6p.onrender.com/search/shoes ,(or bags, phones etc)
                 </div>
 
                 or in your app:
 
-                <div>axios.get('https://amazon-scraper-ld6p.onrender.com/search/shoes/')</div>
+                <div>axios.get('https://amazon-scraper-ld6p.onrender.com/search/shoes')</div>
             </div>
 
             ⭐ Review API<br/>
@@ -74,7 +74,7 @@ function AmazonWebScraper() {
             <div className='reviewsection'>
                 <div> 
                 In your browser/searchbar :<br/>
-                https://amazon-scraper-ld6p.onrender.com/products/shoes/reviews/ ,(or bags, phones etc)
+                https://amazon-scraper-ld6p.onrender.com/products/shoes/reviews ,(or bags, phones etc)
 
                 <h5>Note: you can change the shoes to any product name you want, then add reviews
                 since we are trying to review the product.</h5>
@@ -82,7 +82,7 @@ function AmazonWebScraper() {
 
                 or in your app:
 
-                <div>axios.get('https://amazon-scraper-ld6p.onrender.com/products/shoes/reviews/')</div>
+                <div>axios.get('https://amazon-scraper-ld6p.onrender.com/products/shoes/reviews')</div>
             </div>
 
             <div className='whentouse'>
