@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://amazon-scrapert.vercel.app/'
 }))
 
 const apiKey = 'c9b89eaf2bb7b9ad606738ea8733996c';
