@@ -11,7 +11,8 @@ app.use(cors({
     origin: 'https://amazon-scrapert.vercel.app/'
 }))
 
-const apiKey = 'c9b89eaf2bb7b9ad606738ea8733996c';
+//const apiKey = 'c9b89eaf2bb7b9ad606738ea8733996c';
+const apiKey = '47dc39102fd15a5ea6d2c371818f3118';
 const baseUrl = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`
 
 app.get('/', (req, res) => {
